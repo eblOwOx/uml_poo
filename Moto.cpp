@@ -92,3 +92,23 @@ void Moto::setPoids(int nouveauPoids)
 {
     this->poids = nouveauPoids;
 }
+
+/**
+ * \brief Accesseur de l'attribut moteur
+ *
+ * \return Le moteur
+ */
+/*
+Moteur Moto::getMoteur(){
+    return this->moteur;
+}*/
+
+/**
+ * \brief Mutateur de l'attribut moteur
+ * 
+ * \param nouveaumoteur nouveau moteur
+ */
+/*
+void Moto::setMoteur(Moteur moteur){
+  this->moteur = nouveauMoteur;
+}*/
