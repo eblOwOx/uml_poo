@@ -14,9 +14,9 @@
 using namespace std;
 
 Conducteur::Conducteur() {
-	this->nom = "null";
-	this->prenom = "null";
-	this->anneeNaissance = 0;
+	this->nom = "Mael";
+	this->prenom = "Marchive";
+	this->anneeNaissance = 2006;
 }
 
 
@@ -35,3 +35,35 @@ Conducteur::~Conducteur() {
 	cout << "Destruction du conducteur " << this->prenom << " " << this->nom << " " << this->anneeNaissance << "." << endl;
 }
 
+/**
+ * @brief Retourne le nom du conducteur
+ */
+std::string Conducteur::getNom() const {
+    return nom;
+}
+
+/**
+ * @brief Retourne le prénom du conducteur
+ */
+std::string Conducteur::getPrenom() const {
+    return prenom;
+}
+
+/**
+ * @brief Retourne l'année de naissance du conducteur
+ */
+int Conducteur::getAnneeNaissance() const {
+    return anneeNaissance;
+}
+
+void Conducteur::afficheMotos() const
+{
+}
+
+void Conducteur::addMoto(Moto* newMoto)
+{
+}
+
+void Conducteur::rmMoto(Moto* rmMoto)
+{
+}

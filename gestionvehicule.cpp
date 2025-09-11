@@ -7,6 +7,10 @@
 int main()
 {
 	Conducteur conducteur1;
+	std::cout << "Nom du conducteur : " << conducteur1.getNom() << std::endl;
+	std::cout << "Prenom du conducteur : " << conducteur1.getPrenom() << std::endl;
+	std::cout << "Annee de naissance du conducteur : " << conducteur1.getAnneeNaissance() << std::endl;
+
 	return 0;
 }
 
