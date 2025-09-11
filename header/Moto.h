@@ -6,7 +6,7 @@
  * \date   September 2025
  *********************************************************************/
 
-#define MOTO_H
+#define Moto_H
 #include <iostream>
 #include <string>
 //#include "Moteur.h"

@@ -6,7 +6,7 @@
 * \date   September 2025
 *********************************************************************/
 
-#define ELECTRIC_H
+#define ELECTRIQUE_H
 #include <iostream>
 #include <string>
 
