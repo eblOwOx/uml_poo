@@ -8,6 +8,7 @@
 
 #define CONDUCTEUR_H
 
+#include <vector>
 #include <string>
 #include "Moto.h"  ///< Inclusion car un conducteur possède des motos
 
@@ -32,40 +33,8 @@ public:
      * @paramètre p Prénom du conducteur
      * @paramètre an Année de naissance
      */
+    Conducteur();
+	~Conducteur();
     Conducteur(const std::string& n, const std::string& p, int an);
 
-    /**
-     * @brief Retourne le nom du conducteur.
-     * @return Nom sous forme de string
-     */
-    std::string getNom() const;
-
-    /**
-     * @brief Retourne le prénom du conducteur.
-     * @return Prénom sous forme de string
-     */
-    std::string getPrenom() const;
-
-    /**
-     * @brief Retourne l'année de naissance du conducteur.
-     * @return Année de naissance (int)
-     */
-    int getAnneeNaissance() const;
-
-    /**
-     * @brief Affiche les motos possédées par le conducteur.
-     */
-    void afficheMotos() const;
-
-    /**
-     * @brief Ajoute une moto au conducteur (max 10 motos).
-     * @param newMoto Pointeur vers la moto à ajouter
-     */
-    void addMoto(Moto* newMoto);
-
-    /**
-     * @brief Supprime une moto de la liste du conducteur.
-     * @param rmMoto Pointeur vers la moto à supprimer
-     */
-    void rmMoto(Moto* rmMoto);
 };
