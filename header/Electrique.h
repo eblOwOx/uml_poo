@@ -25,10 +25,10 @@ public:
     /*Classe sous forme canonique*/
     Electrique();
     ~Electrique();
-    Electique(const Electrique& elec);
+    Electrique(const Electrique& elec);
     Electrique &operator = (const Electrique& elec);
 
     Electrique(float tensionMax);
     void setTensionMax(float puissance);
-    float getTentionMax();
+    float getTensionMax();
 };
