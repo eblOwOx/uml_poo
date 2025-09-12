@@ -4,7 +4,6 @@
  *
  **/
 #include <iostream>
-#include "header/Moteur.h"
 #include "header/Thermique.h"
 #include "header/Electrique.h"
 #include "header/conducteur.h"

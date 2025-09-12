@@ -9,7 +9,7 @@
 #define Moto_H
 #include <iostream>
 #include <string>
-//#include "Moteur.h"
+#include "Moteur.h"
 
  /*! \class Moto
     * \brief classe representant une moto. 2 attributs prives
@@ -19,7 +19,7 @@ class Moto
 private:
     /*Classe sous forme canonique*/
     int poids;
-    //Moteur moteur;
+    Moteur moteur;
 
 protected:
 
@@ -30,10 +30,10 @@ public:
     Moto(const Moto& mot);
     Moto &operator = (const Moto& mot);
 
-    Moto(int poids/*, Moteur moteur*/);
+    Moto(int poids, Moteur moteur);
     void setPoids(int nouveauPoids);
     int getPoids();
-    //void setMoteur(Moteur nouveauMoteur);
-    //Moteur getMoteur();
+    void setMoteur(Moteur nouveauMoteur);
+    Moteur getMoteur();
 };
 

@@ -23,18 +23,18 @@ using namespace std;
 Moto::Moto() {
 
     this->poids = 0;
-    //this->moteur = ;
+    this->moteur = moteur;
 }
 
 /**
  * \brief Constructeur avec parametres rentres en argument
  *
  * \param lepoids masse de la moto
- * \param moteur TODO 
+ * \param moteur objet moteur
  */
-Moto::Moto(int lepoids/*, Moteur moteur*/) {
+Moto::Moto(int lepoids, Moteur moteur) {
     this->poids = lepoids;
-    //this->moteur = moteur;
+    this->moteur = moteur;
 }
 
 /**
@@ -53,7 +53,7 @@ Moto::~Moto() {
 Moto::Moto(const Moto& mot)
 {
     this->poids = mot.poids;
-    //this->moteur = 
+    this->moteur = mot.moteur;
 }
 
 /**
@@ -98,17 +98,17 @@ void Moto::setPoids(int nouveauPoids)
  *
  * \return Le moteur
  */
-/*
+
 Moteur Moto::getMoteur(){
     return this->moteur;
-}*/
+}
 
 /**
  * \brief Mutateur de l'attribut moteur
  * 
  * \param nouveaumoteur nouveau moteur
  */
-/*
-void Moto::setMoteur(Moteur moteur){
+
+void Moto::setMoteur(Moteur nouveauMoteur){
   this->moteur = nouveauMoteur;
-}*/
+}
