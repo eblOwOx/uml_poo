@@ -6,13 +6,27 @@
 
 int main()
 {
-	Conducteur conducteur1;
-	std::cout << "Nom du conducteur : " << conducteur1.getNom() << std::endl;
-	std::cout << "Prenom du conducteur : " << conducteur1.getPrenom() << std::endl;
-	std::cout << "Annee de naissance du conducteur : " << conducteur1.getAnneeNaissance() << std::endl;
+    // Création d’un conducteur avec le constructeur par défaut
+    Conducteur conducteur1;
 
-	return 0;
+    // Affichage des informations du conducteur
+    std::cout << "Nom du conducteur : " << conducteur1.getNom() << std::endl;
+    std::cout << "Prenom du conducteur : " << conducteur1.getPrenom() << std::endl;
+    std::cout << "Annee de naissance du conducteur : " << conducteur1.getAnneeNaissance() << std::endl;
+
+    // Affichage de la liste des motos 
+    std::cout << "Motos de " << conducteur1.getNom() << " : " << std::endl;
+    conducteur1.afficheMotos();
+
+	// Création d’une moto avec le constructeur par défaut
+    Moto moto1;
+
+	// Affichage du poids de la moto
+	std::cout << "Poids de la moto1 : " << moto1.getPoids() << std::endl;
+
+    return 0;
 }
+
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
 // Déboguer le programme : F5 ou menu Déboguer > Démarrer le débogage

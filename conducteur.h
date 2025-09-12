@@ -8,6 +8,7 @@
 
 #define CONDUCTEUR_H
 
+#include <iostream>
 #include <vector>
 #include <string>
 #include "Moto.h"  ///< Inclusion car un conducteur possède des motos
@@ -24,7 +25,6 @@ private:
     std::string nom;                ///< Nom du conducteur
     std::string prenom;             ///< Prénom du conducteur
     int anneeNaissance;             ///< Année de naissance du conducteur
-    std::vector<Moto*> mesMotos;    ///< Liste des motos du conducteur (max 10)
 
 public:
     /**

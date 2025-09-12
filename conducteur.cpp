@@ -19,7 +19,6 @@ Conducteur::Conducteur() {
 	this->anneeNaissance = 2006;
 }
 
-
 /**
  * @brief Constructeur de la classe Conducteur
  */
@@ -58,12 +57,15 @@ int Conducteur::getAnneeNaissance() const {
 
 void Conducteur::afficheMotos() const
 {
+    cout << "Le conducteur " << this->prenom << " " << this->nom << " ne possede pas de moto." << endl;
 }
 
 void Conducteur::addMoto(Moto* newMoto)
 {
+	cout << "Ajout de la moto au conducteur " << this->prenom << " " << this->nom << "." << endl;
 }
 
 void Conducteur::rmMoto(Moto* rmMoto)
 {
+	cout << "Suppression de la moto du conducteur " << this->prenom << " " << this->nom << "." << endl;
 }
