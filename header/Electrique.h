@@ -6,14 +6,16 @@
 * \date   September 2025
 *********************************************************************/
 
+#ifndef ELECTRIQUE_H
 #define ELECTRIQUE_H
 #include <iostream>
 #include <string>
+#include "Moteur.h"
 
 /*! \class Electrique
- * \brief classe representant un moteur electrique. 1 attributs prives
+ * \brief classe representant un moteur electrique. Enfant de la classe Moteur. 1 attributs prives
  */
-class Electrique
+class Electrique : public Moteur
 {
 private:
     /*Classe sous forme canonique*/
@@ -32,3 +34,4 @@ public:
     void setTensionMax(float puissance);
     float getTensionMax();
 };
+#endif

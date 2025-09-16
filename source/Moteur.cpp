@@ -1,3 +1,13 @@
+/*****************************************************************//**
+* \file   Moteur.cpp
+* \brief  Definition de la classe Moteur
+*
+* \author Gagny
+* \version 0.1
+* \date   September 2025
+*
+* Programme Cpp permettant de creer des objets pour décrire un moteur
+*********************************************************************/
 #include "../header/Moteur.h"
 #include <iostream>
 
@@ -6,8 +16,7 @@ using namespace std;
 
 /**
  * \brief Constructeur par default
- * \li Masse de la moto = 0
- * \li Moteur =
+ * \li Puissance du moteur = 0 
  *
  */
 Moteur::Moteur(){

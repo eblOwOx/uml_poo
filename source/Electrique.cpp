@@ -10,7 +10,7 @@
 *********************************************************************/
 
 #include "../header/Electrique.h"
-
+#include "../header/Moto.h"
 using namespace std;
 
 
@@ -19,7 +19,7 @@ using namespace std;
  * \li Tension max du moteur = 0
  *
  */
-Electrique::Electrique() 
+Electrique::Electrique ()
 {
     this->tensionMax = 0;
 }
@@ -29,11 +29,12 @@ Electrique::Electrique()
  *
  * \param tensionMoteur tension max du moteur
  */
-Electrique::Electrique(float tensionMoteur) {
+Electrique::Electrique(float tensionMoteur)
+{
     this->tensionMax = tensionMoteur;
 }
 
-/**
+/**t
  * \brief Destructeur
  *
  */

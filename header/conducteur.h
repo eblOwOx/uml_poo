@@ -25,6 +25,7 @@ private:
     std::string nom;                ///< Nom du conducteur
     std::string prenom;             ///< Prénom du conducteur
     int anneeNaissance;             ///< Année de naissance du conducteur
+    Moto mesMotos [10];             ///< Motos du conducteur
 
 public:
     /**
@@ -41,24 +42,24 @@ public:
  * @brief Retourne le nom du conducteur.
  * @return Nom sous forme de string
  */
-    std::string getNom() const;
+    std::string getNom();
 
     /**
      * @brief Retourne le prénom du conducteur.
      * @return Prénom sous forme de string
      */
-    std::string getPrenom() const;
+    std::string getPrenom();
 
     /**
      * @brief Retourne l'année de naissance du conducteur.
      * @return Année de naissance (int)
      */
-    int getAnneeNaissance() const;
+    int getAnneeNaissance();
 
     /**
      * @brief Affiche les motos possédées par le conducteur.
      */
-    void afficheMotos() const;
+    void afficheMotos();
 
     /**
      * @brief Ajoute une moto au conducteur (max 10 motos).

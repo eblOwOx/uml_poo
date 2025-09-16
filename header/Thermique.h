@@ -6,14 +6,16 @@
 * \date   September 2025
 *********************************************************************/
 
-#define Thermique_H
+#ifndef THERMIQUE_H
+#define THERMIQUE_H
 #include <iostream>
 #include <string>
+#include "Moteur.h"
 
 /*! \class Thermique
- * \brief classe representant une moto. 2 attributs prives
+ * \brief classe representant un moteur thermique. Enfant de la classe Moteur. 1 attributs prives
  */
-class Thermique
+class Thermique : public Moteur
 {
 private:
     /*Classe sous forme canonique*/
@@ -30,4 +32,4 @@ public:
     void setCylindree(float cylindree);
     float getCylindree();
 };
-
+#endif

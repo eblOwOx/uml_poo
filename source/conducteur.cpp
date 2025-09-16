@@ -10,13 +10,13 @@
 **************************************************************************/
 
 #include "../header/conducteur.h"
-
 using namespace std;
-
+//TODO faire quelque chose pour mesMotos dans le constructeur
 Conducteur::Conducteur() {
-	this->nom = "Mael";
-	this->prenom = "Marchive";
-	this->anneeNaissance = 2006;
+	this->nom = "John";
+	this->prenom = "Doe";
+	this->anneeNaissance = 1984;
+  //this->mesMotos = Moto mototest [10];
 }
 
 /**
@@ -37,34 +37,35 @@ Conducteur::~Conducteur() {
 /**
  * @brief Retourne le nom du conducteur
  */
-std::string Conducteur::getNom() const {
+string Conducteur::getNom() {
     return nom;
 }
 
 /**
  * @brief Retourne le prénom du conducteur
  */
-std::string Conducteur::getPrenom() const {
+string Conducteur::getPrenom() {
     return prenom;
 }
 
 /**
  * @brief Retourne l'année de naissance du conducteur
  */
-int Conducteur::getAnneeNaissance() const {
+int Conducteur::getAnneeNaissance() {
     return anneeNaissance;
 }
 
-void Conducteur::afficheMotos() const
+//TODO faire en sorte que les méthodes fassent se qu'elles devraient faire
+void Conducteur::afficheMotos()
 {
     cout << "Le conducteur " << this->prenom << " " << this->nom << " ne possede pas de moto." << endl;
 }
-
+//TODO ici aussi
 void Conducteur::addMoto(Moto* newMoto)
 {
 	cout << "Ajout de la moto au conducteur " << this->prenom << " " << this->nom << "." << endl;
 }
-
+//TODO oui encore la meme chose
 void Conducteur::rmMoto(Moto* rmMoto)
 {
 	cout << "Suppression de la moto du conducteur " << this->prenom << " " << this->nom << "." << endl;
